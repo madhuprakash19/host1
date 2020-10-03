@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Karnataka Toursim</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="zoom">
+		<img src="mountain1.png" id="layer1">
+		<img src="mountain2.png" id="layer2">
+		<img src="text.png" id="text">
+	</section>
+	<section class="content">
+		<h2>Welcome to Karnataka Tourism</h2>
+		<p>
+			Karnataka, the sixth largest state in India, has been ranked as the third most popular state in the country for tourism in 2014.It is home to 507 of the 3600 centrally protected monuments in India, the largest number after Uttar Pradesh.The State Directorate of Archaeology and Museums protects an additional 752 monuments and another 25,000 monuments are yet to receive protection.Tourism centres on the ancient sculptured temples, modern cities, the hill ranges, forests and beaches. Broadly, tourism in Karnataka can be divided into four geographical regions: North Karnataka, the Hill Stations, Coastal Karnataka and South Karnataka.The Karnataka government has recently introduced The Golden Chariot – a train which connects popular tourist destinations in the state and GoaNorth Karnataka has monuments that date back to the 5th century. Kannada empires that ruled the Deccan had their capitals here. Badami Chalukyas monuments are located at Pattadakal, Aihole and Badami. Aihole has been called the cradle of Indian architecture and has over 125 temples and monuments built between 450 and 1100 BC. Rashtrakuta monuments at Lokapura, Bilgi and Kuknur and Kalyani Chalukyas monuments built in Gadag style of architecture at Lakkundi, Gadag, Itagi (in Koppal District) and the Vijayanagar empire temples at Vijayanagara are some examples. Hampi in Bellary District has ruins spread over an area of 125 km². With some fifty four world heritage monuments and six hundred and fifty national monuments (ASI). An additional three hundred monuments await protection. The Deccan sultanate monuments at Bijapur and Gulbarga show unique and discreet Hindu influences and rival the Muslim monuments of North India. Archeologically important locations like Sannati, Kanaganahalli in Gulbarga district have thrown more light on Buddhist centres of the 1st century BCE to 3rd century CE. The first ever statue of emperor Ashoka with his queens and a Prakrit inscription Rayo Ashoka (ASI) has been found.Badami surroundings important locations are Kudalasangama, Aihole, Pattadakal, Mahakuta and Banashankari.Hampi surroundings region, they can be visited from Hampi/Hosapete, or from Hubli. There are Kuknur, Itagi, Gadag, Lakkundi, Dambal, Haveri, Kaginele, Bankapura.Haveri district shiggaon taluk gotagodi place has an 8 World Records holder museum known as Utsav Rock Garden , is one of the finest Museums in India a cultural heritage and educational tourist center has over 2000 international quality sculptures depicting rural life and traditional farming, folk games, folk life of a village etc. 
+
+		</p> 
+	</section>
+	<script type="text/javascript">
+		var layer1=document.getElementById('layer1')
+		scroll=window.pageYOffset;
+		document.addEventListener('scroll',
+			function (e) {
+			var offset=window.pageYOffset;
+			scroll=offset;
+			layer1.style.width=(100+scroll/20)+'%';
+		});
+		var layer2=document.getElementById('layer2')
+		scroll=window.pageYOffset;
+		document.addEventListener('scroll',
+			function (e) {
+			var offset=window.pageYOffset;
+			scroll=offset;
+			layer2.style.width=(100+scroll/20)+'%';
+			layer2.style.left=scroll/50+'%';
+		});
+		var text=document.getElementById('text')
+		scroll=window.pageYOffset;
+		document.addEventListener('scroll',
+			function (e) {
+			var offset=window.pageYOffset;
+			scroll=offset;
+			layer2.style.width=(100+scroll/20)+'%';
+			text.style.top= -scroll/20+'%';
+		});
+	</script>
+
+</body>
+</html>
